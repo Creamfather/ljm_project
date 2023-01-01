@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ljm_project
+    password: dlwjdans1@   # TODO 비밀번호를 숨겨야되는데 어떻게 숨길까?
+    url: jdbc:mysql://localhost:33306/learn?useSSL=false&autoReconnect=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Seoul
+
+  # View Resolver 설정 - JSP 적용때문에
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+### MYBATIS ###
+mybatis:
+  mapper-locations: mybatis/mapper/**/**.xml
+
