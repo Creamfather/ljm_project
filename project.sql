@@ -1,12 +1,8 @@
-CREATE
-USER ljm_project@'%' identified by 'dlwjdans1@';
-FLUSH
-PRIVILEGES ;
+CREATE USER ljm_project@'%' identified by 'dlwjdans1@';
+FLUSH PRIVILEGES ;
 
-CREATE
-DATABASE learn;
-SHOW
-DATABASES ;
+CREATE DATABASE learn;
+SHOW DATABASES ;
 
 GRANT ALL PRIVILEGES ON learn.* TO ljm_project@'%';
 
@@ -27,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `learn`.`users`
 SELECT *
 FROM users;
 
-INSERT INTO `LEARN`.`users` (name)
+INSERT INTO `learn`.`users` (name)
 VALUES ('이정문');
 
 -- MYSQL Log 설정
